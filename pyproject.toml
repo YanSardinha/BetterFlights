@@ -1,0 +1,23 @@
+[project]
+name = "betterflights"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Yan Sardinha"}
+]
+license = {text = "MIT License"}
+readme = "README.md"
+requires-python = ">=3.13, <4"
+dependencies = [
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.14.1"
+ruff = "^0.11.2"
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
