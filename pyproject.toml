@@ -17,6 +17,28 @@ dependencies = [
 taskipy = "^1.14.1"
 ruff = "^0.11.2"
 pytest = "^8.3.5"
+pytest-cov = "^6.0.0"
+
+
+[tool.taskipy.tasks]
+ruff = 'ruff check'
+test = 'pytest -s -x --cov=src -vv'
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.format]
+preview = true
+quote-style = 'single'
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = '-p no:warnings'
+asyncio_default_fixture_loop_scope = 'function'
+
+[tool.coverage.run]
+concurrency = ["thread", "greenlet"]
+
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
