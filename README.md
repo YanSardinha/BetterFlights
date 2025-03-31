@@ -49,7 +49,7 @@ Obrigado por considerar contribuir para o projeto **BetterFlights**! A seguir, e
    - Adicione testes, se possível, para verificar se a funcionalidade que você adicionou ou corrigiu está funcionando corretamente.
    - Certifique-se de que todos os testes existentes estão passando. Você pode rodar os testes utilizando o `pytest`:
      ```bash
-     poetry run pytest
+     poetry run task test
      ```
    - Após revisar suas alterações, submeta um pull request detalhado explicando o que foi feito.
 

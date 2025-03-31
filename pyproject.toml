@@ -22,6 +22,7 @@ pytest-cov = "^6.0.0"
 
 [tool.taskipy.tasks]
 ruff = 'ruff check'
+test = 'pytest -s -x --cov=src -vv'
 
 [tool.ruff]
 line-length = 79
